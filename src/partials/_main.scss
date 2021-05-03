@@ -1,0 +1,68 @@
+main{
+    display: flex;
+    height: 80vh;
+    background-image: linear-gradient(0deg, #000000 9%, #414141 74%);
+    align-items: center;
+
+
+    .container{
+        box-shadow: 0px 0px 1px 2px $FrenchGray;
+        padding: 0;
+        border-radius: 5px;
+        background-color: $jumbo;
+
+        nav{
+            border-radius: inherit;
+            background-color: $jumbo;
+            @include py(10px);
+            padding-top: 10px;
+            .input-group {
+                display: flex;
+                justify-content: center;
+
+                label,select,button{
+                    border: 2px solid $tuna;
+                    background-color: $grayChateau;
+                    color: $black;
+                }
+                button{
+                    padding: 5px;
+                }
+            }
+        }
+
+        ol{
+            overflow-y: auto;
+            display: flex!important;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 70vh;
+            margin:0;
+            border-radius: inherit;
+            padding-top: 20px;
+            @include px(20px);
+            list-style: none;
+            background-color: $jumbo;
+
+            li{
+                max-width: max-content;
+                display: flex;
+                width: min-content;
+                @include py(10px);
+
+                .card{
+                    background-color: $grayChateau;
+                    border: 2px solid $tuna;
+
+                    .card-img-top{
+                        width: 200px;
+                    }
+                    .card-title {
+                        height: 80px;
+                    }
+                }
+
+            }
+        }
+    }
+}

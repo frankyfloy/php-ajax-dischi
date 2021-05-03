@@ -1,0 +1,45 @@
+// text color
+.text-white{
+    color: $white;
+}
+
+.text-gold{
+    color: $goldenRod!important;
+}
+
+.text-black{
+    color: $black;
+}
+
+// bg-color
+.bg-goldenRod{
+    background-color: #fcd66c;
+}
+
+
+// Margin
+.mb-0{
+    margin-bottom: 0;
+}
+
+.mb-r3{
+    margin-bottom: 3rem;
+}
+
+
+/* ---------------Scroll Vertical (Classe Scroll)------------------------- */
+.scroll{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.scroll::-webkit-scrollbar{
+	-webkit-overflow-scrolling: auto;
+	width: 6px;
+}
+.scroll::-webkit-scrollbar-thumb{
+	border-radius: 6px;
+    background-color: #000000;
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+/* ------------------------------------------------------------- */

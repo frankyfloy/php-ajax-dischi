@@ -1,0 +1,148 @@
+@mixin position($type-pos,$top-or-bottom, $left-or-right,$zIndex){
+    position: $type-pos;
+    z-index: $zIndex;
+    #{$top-or-bottom}: 0;
+    #{$left-or-right}: 0;
+}
+
+@mixin my-nav($min-height,$p-top,$p-bot){
+    padding: {
+        top: $p-top;
+        bottom: $p-bot;
+    }
+    position: relative;
+    min-height: $min-height;
+}
+
+@mixin NavProperty{
+    @include txt-Capitalize;
+    width: 100%;
+}
+
+@mixin mx-0{
+    margin: {
+        left: 0;
+        right: 0;
+    }
+}
+
+
+@mixin my($m){
+    margin: {
+        top: $m;
+        bottom: $m;
+    }
+}
+
+@mixin mx($m){
+    margin: {
+        left: $m;
+        right: $m;
+    }
+}
+
+
+@mixin px-0{
+    padding: {
+        left: 0;
+        right: 0;
+    }
+}
+
+@mixin px($px){
+    padding: {
+        left: $px;
+        right: $px;
+    }
+}
+
+@mixin py($py){
+    padding: {
+        top: $py;
+        bottom: $py;
+    }
+}
+
+@mixin txt-Uppercase{
+    text-transform: uppercase;
+}
+
+@mixin txt-Capitalize{
+    text-transform: capitalize;
+}
+
+@mixin txt-Capitalize-FirstChar{
+    &:first-letter{
+        text-transform: uppercase;
+    }
+}
+
+
+@mixin my-auto{
+    margin: {
+        top: auto;
+        bottom: auto;
+    }
+}
+
+@mixin mx-auto{
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+@mixin bg-img($url, $repeat, $size){
+    background-image: url($url);
+    background-repeat: $repeat;
+    background-size: $size;
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+}
+
+@mixin hgt-wdt($h,$w){
+    height: $h;
+    width: $w;
+}
+
+
+@mixin zeroing{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@mixin my-btn-nav($color){
+    border: 2px solid $color;
+    color: $color;
+}
+
+@mixin hoverBtn($color){
+    &:hover{
+        border: 2px solid $color;
+        color: $color;
+    }
+
+}
+
+
+
+
+@keyframes flipInY {
+   0% {
+      transform: perspective(400px) rotateY(90deg);
+      opacity: 0;
+   }
+   40% {
+      transform: perspective(400px) rotateY(-10deg);
+   }
+   70% {
+      transform: perspective(400px) rotateY(10deg);
+   }
+   100% {
+      transform: perspective(400px) rotateY(0deg);
+      opacity: 0.7;
+   }
+}
