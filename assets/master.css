@@ -86,17 +86,18 @@ body {
 
 /* ------------------------------------------------------------- */
 header {
-  height: 10vh;
+  height: 7vh;
   background-image: linear-gradient(0deg, #000000 24%, #414141 99%);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #a2abae;
+  color: #a1aba9;
+  font-size: 15px;
 }
 
 main {
   display: flex;
-  height: 80vh;
+  height: 88vh;
   background-image: linear-gradient(0deg, #000000 9%, #414141 74%);
   align-items: center;
 }
@@ -119,8 +120,8 @@ main .container nav .input-group {
 }
 main .container nav .input-group label, main .container nav .input-group select, main .container nav .input-group button {
   border: 2px solid #3e3f47;
-  background-color: #a2abae;
-  color: #000000;
+  background-image: linear-gradient(0deg, #000000 -22%, #414141 58%);
+  color: #a1aba9;
 }
 main .container nav .input-group button {
   padding: 5px;
@@ -128,7 +129,7 @@ main .container nav .input-group button {
 main .container ol {
   overflow-y: auto;
   display: flex !important;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   height: 70vh;
   margin: 0;
@@ -143,25 +144,36 @@ main .container ol li {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  display: flex;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  display: flex;
+  padding: 10px;
 }
 main .container ol li .card {
-  background-color: #a2abae;
-  border: 2px solid #3e3f47;
+  background-image: linear-gradient(0deg, #000000 -22%, #414141 58%);
+  box-shadow: 0px 2px 5px 2px #3e3f47;
+  max-height: 400px;
+}
+main .container ol li .card .card-img-top, main .container ol li .card .card-body {
+  border: 1px solid #8c9aa5;
 }
 main .container ol li .card .card-img-top {
+  padding: 0.3rem;
   width: 200px;
+  min-height: 200px;
 }
-main .container ol li .card .card-title {
+main .container ol li .card .card-body {
+  padding: 1rem;
+  color: #a1aba9;
+  font-weight: bold;
+  border: 1px solid #8c9aa5;
+}
+main .container ol li .card .card-body .card-title {
   height: 80px;
 }
 
 footer {
-  height: 10vh;
+  height: 5vh;
   background-image: linear-gradient(0deg, #000000 48%, #414141 153%);
 }

@@ -22,7 +22,7 @@
                         <img src="<? echo $database[$disk]['poster'] ?>" class='card-img-top'>
                       <div class="card-body">
                         <h4 class="card-title"><? echo $database[$disk]['title'] ?></h4>
-                        <p class="card-text"><small><? echo $database[$disk]['author'] ?></small></p>
+                        <p class="card-text"><? echo $database[$disk]['author'] ?></p>
                         <p class="card-text"><small><? echo $database[$disk]['year'] ?></small></p>
                       </div>
                     </div>
